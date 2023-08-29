@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CODE_PATH</key>
+	<string>/usr/local/bin/code-insiders</string>
+	<key>NODE_PATH</key>
+	<string>/Users/guyifeng/.nvm/versions/node/v14.18.2/bin/node</string>
+	<key>WORKSPACE</key>
+	<string>/Users/guyifeng/workspace/seeyon</string>
+</dict>
+</plist>

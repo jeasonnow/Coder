@@ -1,0 +1,21 @@
+{
+  "name": "workflow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "NODE_ENV=production rollup -c rollup.config.mjs && ditto -ck './dist/' './dist/code.alfredworkflow'",
+    "prebuild": "rm -rf dist"
+  },
+  "dependencies": {
+    "alfy": "^0.10.0",
+    "fs-extra": "^10.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "rollup": "^3.28.1",
+    "rollup-plugin-copy": "^3.4.0"
+  }
+}

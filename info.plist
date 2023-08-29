@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfredapp.santree.code</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>10051C82-BD0D-426A-BF66-447E8AC8B972</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>622F9568-07D8-4F57-A19E-3F37FB81D870</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>310AB1AA-5DE2-4FEC-A5F1-BE08E66204B8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>10051C82-BD0D-426A-BF66-447E8AC8B972</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Santree</string>
+	<key>description</key>
+	<string>Quickly open projects in the working directory</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Code</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query="{query}"
+
+echo -n $query
+
+code=$CODE_PATH
+
+$code $query</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>10051C82-BD0D-426A-BF66-447E8AC8B972</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>快速打开了 {query} 项目</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>622F9568-07D8-4F57-A19E-3F37FB81D870</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>code</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>preparing....</string>
+				<key>script</key>
+				<string>$NODE_PATH index.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>快速打开工程</string>
+				<key>title</key>
+				<string>打开</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>310AB1AA-5DE2-4FEC-A5F1-BE08E66204B8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>模糊搜索指定工作目录的工程，并通过系统中的 Code 命令打开对应工程。
+
+Fuzzy search for a project in a specified working directory and open the corresponding project with the Code command in the system.</string>
+	<key>uidata</key>
+	<dict>
+		<key>10051C82-BD0D-426A-BF66-447E8AC8B972</key>
+		<dict>
+			<key>xpos</key>
+			<real>375</real>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>310AB1AA-5DE2-4FEC-A5F1-BE08E66204B8</key>
+		<dict>
+			<key>xpos</key>
+			<real>135</real>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>622F9568-07D8-4F57-A19E-3F37FB81D870</key>
+		<dict>
+			<key>xpos</key>
+			<real>620</real>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>/usr/local/bin/code</string>
+				<key>placeholder</key>
+				<string>Please Enter Your Code Path</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>System VSCode Code Command Path</string>
+			<key>label</key>
+			<string>System Code Path</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>CODE_PATH</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>/usr/local/bin/node</string>
+				<key>placeholder</key>
+				<string>Please Enter Your Node Path</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>System Node Command Path</string>
+			<key>label</key>
+			<string>System Node Path</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>NODE_PATH</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string>Please Enter Your Workspace Folder</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Your Workspace Folder</string>
+			<key>label</key>
+			<string>Your Workspace Folder</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>WORKSPACE</string>
+		</dict>
+	</array>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/jeasonnow</string>
+</dict>
+</plist>
