@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
         with:
@@ -19,10 +19,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-
-      - name: Install Yarn
-        run: npm install -g yarn
-
+          
       - name: Run install
         uses: borales/actions-yarn@v4
         with:
