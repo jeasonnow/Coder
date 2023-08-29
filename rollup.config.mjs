@@ -3,9 +3,8 @@ import resolve from '@rollup/plugin-node-resolve';
 import json from '@rollup/plugin-json';
 import copy from 'rollup-plugin-copy';
 
-
 export default {
-  input: 'index.js',
+  input: 'index.mjs',
   plugins: [
     resolve(),
 		commonjs(),

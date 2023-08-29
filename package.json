@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "NODE_ENV=development rollup -c rollup.config.mjs -w",
     "build": "NODE_ENV=production rollup -c rollup.config.mjs && ditto -ck './dist/' './dist/code.alfredworkflow'",
     "prebuild": "rm -rf dist"
   },
